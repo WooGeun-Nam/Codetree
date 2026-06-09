@@ -14,7 +14,10 @@ int main() {
 
     int answer = 1e9;
 
-    for(int i=0; i<10000; i++)
+    int minNumber = *min_element(num.begin(), num.end());
+    int maxNumber = *max_element(num.begin(), num.end());
+
+    for(int i=minNumber; i<=maxNumber-k; i++)
     {
         int minNum = i;
         int maxNum = i+k;
